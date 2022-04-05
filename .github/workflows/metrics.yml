@@ -22,12 +22,15 @@ jobs:
           #  - read:user (for user related data)
           #  - repo      (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_SECRET }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
           user: phiberoptick
-          template: terminal
+          template: classic
+          #template: terminal
           base: header, activity, community, repositories, metadata
-          config_timezone: America/New_York
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_secrets: yes
@@ -84,11 +87,9 @@ jobs:
           plugin_reactions_limit_discussions: 100
           plugin_reactions_limit_discussions_comments: 100
           plugin_reactions_limit_issues: 100
-          plugin_repositories: 500
-          #plugin_repositories: yes
+          plugin_repositories: 500500
           plugin_repositories_affiliations: owner
           plugin_repositories_batch: 100
-          plugin_repositories_forks: yes
           plugin_skyline: yes
           plugin_skyline_frames: 60
           plugin_skyline_quality: 0.5
