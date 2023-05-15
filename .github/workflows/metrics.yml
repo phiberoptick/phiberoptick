@@ -1,7 +1,7 @@
 # Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
 name: Metrics
 on:
-  # Schedule updates (each hour)
+  # Schedule updates (00:01)
   schedule: [{cron: "1 0 * * *"}]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
@@ -78,8 +78,8 @@ jobs:
           plugin_people_limit: 24
           plugin_people_size: 28
           plugin_people_types: followers, following
-          plugin_poopmap: yes
-          plugin_poopmap_days: 7
+          #plugin_poopmap: yes
+          #plugin_poopmap_days: 7
           plugin_projects: yes
           plugin_projects_limit: 4
           plugin_reactions: yes
