@@ -1,4 +1,4 @@
-[![Metrics Badge](https://github.com/phiberoptick/phiberoptick/actions/workflows/metrics.yml/badge.svg)](https://github.com/phiberoptick/phiberoptick/actions/workflows/metrics.yml)
+#[![Metrics Badge](https://github.com/phiberoptick/phiberoptick/actions/workflows/metrics.yml/badge.svg)](https://github.com/phiberoptick/phiberoptick/actions/workflows/metrics.yml)
 
 ![Metrics](/github-metrics.svg)
 
